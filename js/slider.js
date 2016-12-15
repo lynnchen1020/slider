@@ -8,11 +8,13 @@ $(document).ready(function () {
 
   var imgsLen = $('.slide-content li').length;
 
-  var i = 0;
+  var firstImgSrc = $('li img').attr('src')
+
+  var i = imgsLen - imgsLen;
 
 
   // Show first img
-  imgShowBox.attr('src', 'images/img0.jpg').show();
+  imgShowBox.attr('src', firstImgSrc).show();
 
 
   // Next
